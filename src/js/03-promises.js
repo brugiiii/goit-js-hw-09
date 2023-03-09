@@ -28,7 +28,7 @@ refs.formEl.addEventListener('submit', evt => {
   setTimeout(() => {
     let time = parseInt(delay.value);
 
-    intervalId = setInterval(() => {
+    const intervalId = setInterval(() => {
       count += 1;
       if (count == amount.value) {
         clearInterval(intervalId);
