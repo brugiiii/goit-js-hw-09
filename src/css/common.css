@@ -16,3 +16,59 @@ img {
   display: block;
   max-width: 100%;
 }
+
+[data-start],
+[data-stop] {
+  min-width: 170px;
+  height: 55px;
+  font-weight: 700;
+  border-radius: 10px;
+  border-color: tomato;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+[data-start]:hover,
+[data-stop]:hover {
+  background-color: tomato;
+}
+
+.btn-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+
+  height: 40vw;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.timer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20vw;
+  gap: 50px;
+}
+
+.value,
+.label {
+  font-weight: 900;
+  font-size: 30px;
+}
+
+.management {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+
+[id='datetime-picker'] {
+  border-radius: 10px;
+  padding-left: 35px;
+}
