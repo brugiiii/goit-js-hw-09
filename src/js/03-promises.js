@@ -40,6 +40,7 @@ refs.formEl.addEventListener('submit', evt => {
         .catch(({ position, delay }) => {
           Notify.failure(`Rejected promise ${position} in ${delay}ms`);
         });
+
       time += parseInt(step.value);
     }, step.value);
   }, delay.value);
